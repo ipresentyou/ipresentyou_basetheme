@@ -1,0 +1,566 @@
+	html, body {
+		margin: 0px;
+		padding: 0px;
+		font-family: MetaWeb;
+		font-size: 1em;
+	}
+	body {
+		width: 100%;
+	}
+	
+	
+	a {
+		color: #9d9d9d;
+		padding-bottom: 0px !important;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #9d9d9d;
+	}
+	a.active {
+		color: #d10a0f;
+	}
+	
+	#wrapper {
+		margin: 0;
+		padding: 0;
+	}
+	#content {
+		float: left;
+		width: 100%;
+		margin: 0;
+		position: relative;
+	}
+	#slide {
+		color: black;
+		margin: 0px;
+		padding: 0px;
+		height: 100%;
+		background-color: white;
+		z-index: 1003;
+		position: fixed !important;
+		top: 0;
+	}
+	.slideContent {
+		display: none;
+	}
+	#slider {
+		margin: 0px;
+		padding: 0px;
+		position: fixed !important;
+		left: auto;
+		right: 0;
+		width: 5%;
+		height: 100%;
+		background-color: #d10a0f;
+		z-index: 1003;
+		-webkit-box-shadow: inset 50px 0px 50px -50px #000000;	/* webkit browser*/ 
+		-moz-box-shadow: inset 50px 0px 50px -50px #000000;	/* firefox */ 
+		box-shadow: inset 50px 0px 50px -50px #000000;
+	}
+	.tabs dd {
+		background-color: none;
+		background: none;
+	}
+	.tabs dd > a {
+		background-color: none;
+		background: none;
+		padding: 0;
+	}
+	.tabs dd.active a {
+		background: white;
+		-webkit-box-shadow: inset 50px 0px 50px -50px #000000;	/* webkit browser*/ 
+		-moz-box-shadow: inset 50px 0px 50px -50px #000000;	/* firefox */ 
+		box-shadow: inset 50px 0px 50px -50px #000000;
+	}
+	.tabs dd.active a:hover {
+		background: white;
+		-webkit-box-shadow: inset 50px 0px 50px -50px #000000;	/* webkit browser*/ 
+		-moz-box-shadow: inset 50px 0px 50px -50px #000000;	/* firefox */ 
+		box-shadow: inset 50px 0px 50px -50px #000000;
+	}
+	.tabs dd > a:hover {
+        background: #d10a0f;
+        background: none;
+   }
+	.tabs.vertical {
+		width: 100%;
+	}
+	.sliderButtons {
+		width: 100%;
+		display: block;
+		background-color: #d10a0f;
+		-webkit-box-shadow: inset 50px 0px 50px -50px #000000;	/* webkit browser*/ 
+		-moz-box-shadow: inset 50px 0px 50px -50px #000000;	/* firefox */ 
+		box-shadow: inset 50px 0px 50px -50px #000000;
+	}
+	.sliderButtons.activeSlide {
+		background-color: white !important;
+		-webkit-box-shadow: inset 50px 0px 50px -50px #000000;	/* webkit browser*/ 
+		-moz-box-shadow: inset 50px 0px 50px -50px #000000;	/* firefox */ 
+		box-shadow: inset 50px 0px 50px -50px #000000;
+	}
+	#facebook {
+		position: absolute;
+		top: auto;
+		bottom: 0;
+	}
+	.sliderImage {
+		left: 0;
+		width: 100%;
+	}
+	.sliderDivide{
+		margin-bottom: 0px;
+		margin-top: 0px;
+		margin-left: 20%;
+		width: 60%;
+		border-style: solid;
+		border-color: white;
+	}
+	#activeSlide {
+		/*position: absolute;
+		top: 0px;*/
+	}
+	#headerLogo {
+		float: left;
+		display: block;
+		width: 20%;
+	}
+	#headerLogoSlide, #headerLogoSlideText {
+		float: left;
+		display: none;
+		width: 4%;
+	}
+	#headerMenu {
+		float: left;
+		display: block;
+		width: 80%;
+		padding-top: 2%;
+		
+		
+	}
+	#headerMenuMenu li{
+		float: left;
+		list-style-type: none;
+		padding-right: 2%;
+		
+	}
+	#headerMenuButton {
+		float: left;
+		display: block;
+		width: 8%;
+		border-style: solid;
+		border-color: #999999;
+		border-width: thin;
+	}
+	#headerMenuMenu {
+		float: left;
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+	#headerspace {
+		float: left;
+		display: block;
+		width: 50%;
+		padding-bottom: 5px;
+	}
+	#headerChrisCoffee, #headerChrisCoffeeM {
+		float: left;
+		display: block;
+		width: 30%;
+	}
+	#headerChrisCoffeeSlide{
+		float: left;
+		display: none;
+		width: 11%;
+	}
+	#chris, #coffee, #chrisSlide, #coffeeSlide {
+		float: left;
+		display: block;
+		width: 50%;
+	}
+	#header {
+		float: left;
+		display: block;
+		position: relative;
+		width: 100%;
+		margin: 0;
+		background-color: white;
+		z-index: 9;
+	}
+	#headerBox {
+		float: left;
+		display: block;
+		position: relative;
+		width: 100%;
+
+	}
+	.hidden {
+		position: absolute;
+  		clip: rect(1px 1px 1px 1px); /* IE6 & 7 */
+  		clip: rect(1px, 1px, 1px, 1px);
+	}
+	.center {
+		float: none;
+	   margin-left: auto;
+	   margin-right: auto;
+	}
+	.img-responsive {
+		width: 100%;
+	}
+	#footer {
+		float: right;
+		display: block;
+		padding: 20px;
+		margin: 0;
+		font-family: MetaScWeb;
+	}
+	.footerElement {
+		padding: 10px;
+	}
+	
+	
+	#overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: white;
+		filter:     alpha(opacity = 50);    /* IE 6, 7, 8 */
+		-ms-filter: "alpha(opacity = 50)";  /* ab IE 8 zusätzlich möglich */
+		opacity:    .50;                    /* alle anderen Browser einschließlich IE 9 */
+		z-index: 150;
+		display: none;
+		overflow: hidden;
+	}
+	
+
+
+#wrapper {
+	float: left;
+	width: 95%;
+	background-color: white;
+}
+
+#container {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	width: 100%;
+}
+.move-left a.exit-off-canvas {
+	-webkit-box-shadow: none;	/* webkit browser*/ 
+	-moz-box-shadow: none;	/* firefox */ 
+	box-shadow: none;
+}
+ 
+@charset "UTF-8";
+
+
+@font-face {
+  font-family: MetaScWeb;
+  src: url("../fonts/MetaScWeb-Normal.eot");
+  src: url("../fonts/MetaScWeb-Normal.eot?") format('eot'),
+       url("../fonts/MetaScWeb-Normal.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: MetaScWeb;
+  src: url("../fonts/MetaScWeb-Medium.eot");
+  src: url("../fonts/MetaScWeb-Medium.eot?") format('eot'),
+       url("../fonts/MetaScWeb-Medium.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: MetaWeb;
+  src: url("../fonts/MetaWeb-Normal.eot");
+  src: url("../fonts/MetaWeb-Normal.eot?") format('eot'),
+       url("../fonts/MetaWeb-Normal.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: MetaWeb;
+  src: url("../fonts/MetaWeb-Medium.eot");
+  src: url("../fonts/MetaWeb-Medium.eot?") format('eot'),
+       url("../fonts/MetaWeb-Medium.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: MetaScWeb-Normal;
+  src: url("MetaScWeb-Normal.woff") format("woff");
+}
+
+@font-face {
+  font-family: "eins-und-alles";
+  src:url("../fonts/eins-und-alles.eot");
+  src:url("../fonts/eins-und-alles.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/eins-und-alles.woff") format("woff"),
+    url("../fonts/eins-und-alles.ttf") format("truetype"),
+    url("../fonts/eins-und-alles.svg#eins-und-alles") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "eins-und-alles" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "eins-und-alles" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-buch-kreis:before {
+  content: "a";
+}
+.icon-christopherus:before {
+  content: "b";
+}
+.icon-download-frei:before {
+  content: "c";
+}
+.icon-download-kreis:before {
+  content: "d";
+}
+.icon-einkaufswagen:before {
+  content: "e";
+}
+.icon-einkaufswagen-frei:before {
+  content: "f";
+}
+.icon-einkaufswagen-kreis:before {
+  content: "g";
+}
+.icon-eins-und-alles:before {
+  content: "h";
+}
+.icon-facebook-boarder-frei:before {
+  content: "i";
+}
+.icon-facebook-frei:before {
+  content: "j";
+}
+.icon-facebook-kreis:before {
+  content: "k";
+}
+.icon-ginko:before {
+  content: "l";
+}
+.icon-info-frei:before {
+  content: "m";
+}
+.icon-jobs-word:before {
+  content: "n";
+}
+.icon-kalender-frei:before {
+  content: "o";
+}
+.icon-kalender-kreis:before {
+  content: "p";
+}
+.icon-mail-frei:before {
+  content: "q";
+}
+.icon-mail-kreis:before {
+  content: "r";
+}
+.icon-newsletter-symbol-word:before {
+  content: "s";
+}
+.icon-phone-2-frei:before {
+  content: "t";
+}
+.icon-phone-frei:before {
+  content: "u";
+}
+.icon-phone-kreis:before {
+  content: "v";
+}
+.icon-suche-frei:before {
+  content: "w";
+}
+.icon-time-frei:before {
+  content: "x";
+}
+.icon-time-kreis:before {
+  content: "y";
+}
+.icon-zu-christopherus:before {
+  content: "z";
+}
+.icon-zum-shop:before {
+  content: "A";
+}
+.icon-book-frei:before {
+  content: "B";
+}
+.icon-eins-und-alles-2:before {
+  content: "C";
+}
+
+
+.icon {
+  	width: auto;
+  	height: auto;
+  	line-height: inherit;
+  	vertical-align: baseline;
+  	float: left;
+  	
+}
+
+
+
+
+@media (max-width: 991px) {
+  	html, body {
+		
+	}
+	#wrapper {
+		width: 93%;
+	}
+	#slider {
+		width: 7%;
+	}
+	#content {
+		position: relative;
+		
+	}
+	.xs, .m, .l, .ml{
+		display: none !important;
+	}
+	#header {
+		position: relative ;
+		top: 0px !important;
+	}
+	#headerMenuButton {
+		width: 8%;
+	}
+	#headerLogo {
+		width: 50%;
+		padding-left: 20%;
+		margin-right: 30%;
+	}
+	#headerLogoSlide {
+		width: 8%;
+		margin-left: 20%;
+	}
+	#headerLogoSlideText {
+		width: 21%;
+		margin-right: 16%;
+	}
+	#headerspace {
+		display: none !important;
+		width: 27%;
+	}
+	#headerChrisCoffeeM {
+		display: block !important;
+		width: 8%;
+	}
+	#chrisSlide, #coffeeSlide {
+		width: 100%;
+	}
+	#headerChrisCoffeeSlide {
+		display: none !important;
+	}
+	#headerMenuMenu {
+		
+	}
+	#headerMenuMenu li {
+		width: 100%;
+		font-size: 120%;
+		padding-top: 5%;
+	}
+	#smallmenu {
+		height: 100%;
+		background-color: #f2f2f2;
+		-webkit-box-shadow: inset -50px 0px 50px -50px #999999;	/* webkit browser*/ 
+		-moz-box-shadow: inset -50px 0px 50px -50px #999999;	/* firefox */ 
+		box-shadow: inset -50px 0px 50px -50px #999999;
+	}
+	#smallmenuheader {
+		color: #777777;
+		font-family: georgia;
+		font-size: 180%;
+		text-align: center;
+		letter-spacing: 0.2em;
+		margin-left: 7%;
+		margin-right: 7%;
+		margin-top: 8%;
+	}
+	#smallmenu hr {
+		color: #c8c8c8;
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+	#smallmenu ul {
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+	#smallmenu li {
+		padding-top: 0;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	html, body {
+		
+	}
+	.xs, .s, .l, .sxs {
+		display: none !important;
+	}
+	#headerLogo {
+		width: 17%;
+	}
+	#headerspace {
+		width: 63%;
+	}
+	#headerChrisCoffeeM {
+		width: 16% !important;
+	}
+	#chrisSlide, #coffeeSlide {
+		width: 50% !important;
+	}
+	#headerMenu {
+		padding: 1% 0%;
+	}
+}
+
+@media (min-width: 1200px) {
+	html, body {
+		
+	}
+	.xs, .s, .m, .sxs, .sm, .msxs {
+		display: none !important;
+	}
+}
+
+
+
+

@@ -1,0 +1,377 @@
+/*reset*/
+
+html, body, body div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+.presentation .presentation{position:fixed}
+.media, .media .media {
+margin-top: 15px;
+border: 1px solid #ccc;
+padding: 25px;
+}
+.media.col_6 {
+width: 42%;
+height: 80px;
+}
+
+/*main*/
+
+body{
+font-family: 'Kreon', arial, serif;	font-size:14px;
+	background-position: 0 0;
+	background-color: #333;
+    color:#ccc;
+	background-image: url(krieseln.png);
+}
+.headerbg {
+	width: 100%;
+	background-color: #CCC;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	background-image: url(krieseln.png);
+}
+
+.content {
+	width: 940px;
+	margin: 0 auto;
+}
+
+/*head*/
+.slider img{ display: block;
+    margin-left: auto;
+    margin-right: auto;
+width: 100%;
+padding: 20px 0;
+max-width: 930px;}
+.head{
+	position:relative;
+	color:#FFF;
+	padding-right: 0px;
+	padding-bottom: 0;
+	padding-left: 0px;
+	margin-right: 0px;
+}
+.main {
+	clear: both;
+	margin-top: 0px;
+	overflow: hidden;
+}
+.head h1{
+	margin-top:22px;
+	font-size:30px;
+	font-weight: 300;
+	font-family: 'Kreon', arial, serif;
+	color: #515151;
+}
+#logo {
+	width: 100%;
+	margin:0 auto;
+	position:relative;
+}
+
+
+.logo {
+	padding: 0 0 0;
+	width: 320px;
+	height: 28px;
+	overflow: hidden;
+	position: absolute;
+	top: -21px;
+	left: 621px;
+	z-index:20;
+	background-image: url(logo_johannespoll-crossmedia.png);
+}
+
+.logo:hover {
+	background-position: 0px 27px;
+		text-shadow:1px 1px 1px rgba(0,0,0,1.0);
+
+}
+.kontakt {
+padding-top: 20px;
+padding-bottom: 0px;
+}
+p.nav {
+	font-size:25px;
+	font-weight: 100;
+	font-family: 'Kreon', arial, serif;
+}
+
+
+#ipresentyou_basetheme {
+	width: 100%;
+	margin:0 auto;
+	position:relative;
+}
+
+
+.ipresentyou_basetheme {
+	padding: 0 0 0;
+	width: 48px;
+	height: 52px;
+	overflow: hidden;
+	position: absolute;
+	z-index:20;
+	background-image: url(ipresentyou_basetheme-go.png);
+	left: 893px;
+	top: -34px;
+}
+
+.ipresentyou_basetheme:hover {
+	background-position: 0px 52px;
+}
+
+/*menu*/
+
+#top-menu {
+	width: 100%;
+	float: left;
+	font-size:25px;
+	font-family: 'Kreon', arial, serif;
+	margin-top: 0px;
+	margin-right: 0;
+	margin-bottom: 1em;
+	margin-left: 0;
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	font-weight: 100;
+	height: 40px;
+	top: 20px;
+}
+
+
+
+#top-menu ul {
+	list-style: none;
+	width: 900px;
+	padding: 0;
+	height: 30px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+
+
+#top-menu ul a, #top-menu ul .cur {
+	float: left;
+	display: block;
+	text-decoration: none;
+	margin: 0;
+	color: #CDCDCD;
+	letter-spacing: 1px;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	opacity: .4;
+}
+
+
+
+#top-menu ul a:hover, #top-menu ul .act a {
+	opacity: .9;
+	background-image: url(pfeil50_vertical.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	filter: Light;
+}
+
+
+
+#top-menu li {
+
+	float: left;
+
+	margin: 0;
+
+	padding: 0;
+
+}
+/*footer*/
+
+html, body, .non-footer { height: 100%;	
+ }
+
+body > .non-footer {
+	height: auto;
+}
+
+#footer {
+	position: relative;
+	height: 52px;
+	clear:both;
+	overflow: hidden;
+	font-weight: 300;
+	font-family: 'Kreon', arial, serif;
+}
+
+#footer{
+	height:52px;
+	padding:20px 0 20px 0;
+	color:#aaa;
+}
+#footer>.inner{
+	position:relative;
+	padding-left:0px;
+	width:940px;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #B4B4B4;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-top: 10px;
+}
+
+#footer a{
+  color:#fff;
+  text-decoration:none;
+}
+#footer a:hover{
+  text-decoration:underline;
+}
+
+
+/*center*/
+
+
+/*boxes*/
+
+.box 
+{
+	float:left;
+	width:300px;
+	height:230px;
+	background-color: #666;
+	margin-right: 20px;
+	overflow: hidden;
+}
+.box:hover {
+	background-color: #ccc;
+	-webkit-box-shadow: 0px 0px 10px #888888; /* Safari */
+	box-shadow: 0px 0px 10px #888888;
+}
+.boxlast{
+	float:left;
+	width:300px;
+	height:230px;
+	background-color: #666;
+	margin-right: 0px;
+}
+.boxlast:hover {
+	background-color: #ccc;
+	-webkit-box-shadow: 0px 0px 5px #888888; /* Safari */
+	box-shadow: 0px 0px 5px #888888;
+}
+/*presentation*/
+
+
+a.presentation {
+	display: block;
+	position: absolute;
+	top: 535px;
+	width: 50px;
+	height: 50px;
+	text-indent: -7777px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	opacity: .2;
+	background-image: url(pfeil50_l.png);
+	background-repeat: no-repeat;
+	margin-top: 0px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	z-index: 100;
+    }
+a.presentation.next {
+  left: 0px;
+    }
+a.presentation.prev {
+  right: 0px;
+  background-image: url(pfeil50_r.png);
+  background-repeat: no-repeat;
+
+    }
+a.presentation:hover {
+    opacity: .9;
+    }
+/*fonts*/
+
+a {
+	color: #ECECEC;
+	letter-spacing: 1px;
+	-o-transition: all .5s ease;
+	opacity: .6;
+	text-decoration: none;
+}
+
+
+
+a:hover {
+	    opacity: .9;
+
+}
+p {
+	}
+##Abstand zwischen den zwei Elementen
+div.csc-frame-frame2 {  
+margin-left: 30px;
+}
+div.csc-frame-frame1{
+margin-right: 20px;
+}
+div.csc-frame-frame1, div.csc-frame-frame2 {  
+background-color: #666;
+width: 260px;
+padding: 20px;
+float: left;
+}
+
+.clearer {
+clear: both;
+display: block;
+height: 1px;
+margin-bottom: -1px;
+font-size: 1px;
+line-height: 1px;
+}
+
+.media:first-child {
+margin-top: 7px;
+}

@@ -1,0 +1,248 @@
+ /*
+ & Columns : 12 
+ & Gutter %: 20% 
+ & MaxWidth: 1280px
+ */
+
+.grid{
+width:1220px;
+margin:0 auto;
+padding:0 10%;
+}
+
+.grid.flex{
+width:100%;
+max-width:1840px;
+padding:0 10%;
+}
+
+.row{
+display:block;
+overflow:hidden;
+clear:both;
+}
+
+*[class*="col_"].alpha{margin-left:0;}
+*[class*="col_"].omega{margin-right:0;}
+ 
+.col_1  { width: 6.6666666666667%; }
+.col_2  { width: 15%; }
+.col_15  { padding-right: 1.66%; }
+.col_3  { width: 23.333333333333%; }
+.col_4  { width: 31.666666666667%; }
+.col_5  { width: 40%; }
+.col_6  { width: 48.333333333333%; }
+.col_7  { width: 56.666666666667%; }
+.col_8  { width: 65%; }
+.col_9  { width: 73.333333333333%; }
+.col_10 { width: 81.666666666667%; }
+.col_11 { width: 90%; }
+.col_12 { width: 98.333333333333%; }
+#footer-nav .col_15   {
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 160px;
+
+}
+*[class*="col_"]{
+margin-left: 0.83333333333333%;
+margin-right: 0.83333333333333%;
+margin-top:0.7em;
+margin-bottom:0.7em;
+float: left;
+display: block;
+}
+
+.grid img{
+width: 100%;
+height:auto;
+}
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
+* html .clearfix, *:first-child+html .clearfix{zoom:1}
+
+/* Viewable Grids 
+	To view your grids, add the class .visible to any grid container.
+	This will add a background color so you can see the layout of your grids. 
+*/
+*[class*="col_"].visible{
+border-top:1px solid #b40725;
+    padding-top: 0.7em;
+    background:linear-gradient(to bottom, #414141 0%, #333 100%);
+}
+
+*[class*="col_"].none{
+    margin: 0.0%;
+    }
+
+.powermail_legend,.padleft {
+    padding-left:5px;
+visibility: hidden;
+}
+.padright {
+    padding-right:5px;
+    visibility: hidden;
+}
+/*---------------------------------
+	Responsive Grid Media Queries - 1280, 1024, 768, 480
+	1280-1024 	- desktop (default grid)
+	1024-768 	- tablet landscape
+	768-480 	- tablet 
+	480-less 	- phone landscape & smaller
+-----------------------------------*/
+@media all and (min-width: 1260px) and (max-width: 1480px) {
+    h1 a{ font-size: 0.8em;padding:10px;display:block;color: #FFFFFF;background: url(../img/pfeil.png) center right no-repeat #be001f;padding-right:30px;}
+}
+@media all and (min-width: 980px) and (max-width: 1260px) {
+    h1 a{ font-size: 0.7em; padding:8px;display:block;color: #FFFFFF;background: url(../img/pfeil_25.png) center right no-repeat #be001f;padding-right:30px;}
+    .bx-wrapper .bx-caption { font-size: 0.9em;}
+}
+@media all and (min-width: 740px) and (max-width: 980px) {
+    h1 a{ font-size: 0.6em;padding:8px;display:block;color: #FFFFFF;background: url(../img/pfeil_25.png) center right no-repeat #be001f;padding-right:30px;}
+    .bx-wrapper .bx-caption { font-size: 0.85em;padding-right: 30px;}
+}
+
+@media all and (min-width: 1024px) and (max-width: 1380px) {
+
+	.grid *[class*="col_"]{}
+	.grid{max-width: 1024px;}
+	.show-desktop	{display:block;}
+	.hide-desktop	{display:none;}
+	.show-tablet	{display:none;}
+	.show-phone		{display:none;}
+	.hide-phone		{display:block;}
+	
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    h1 a{ font-size: 0.6em!important;}
+    h4{ font-size: 1.4em!important;}
+	.grid *[class*="col_"]{}
+	.grid{max-width: 768px;}
+	.show-desktop	{display:none;}
+	.hide-desktop	{display:block;}
+	.show-tablet	{display:block;}
+	.hide-tablet	{display:none;}
+	.show-phone		{display:none;}
+	.hide-phone		{display:block;}
+
+}
+
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .momente{ position: relative;margin:0px;padding:0px;display:block;border:solid 0px;width:100%}
+    div.col_2:nth-child(7) > a:nth-child(1) > img:nth-child(1) {
+        z-index: 100;
+        text-align: center;
+        width: 200px!important;
+    }
+	.grid *[class*="col_"]{
+	float:none;
+	width:auto;
+	clear:both;
+	display:block;
+	}
+
+	/* columns inside of columns */
+	.grid *[class*="col_"] [class*="col_"]{
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+	}
+    #footer-nav .col_15 {
+height: 100%;    }
+	.grid{max-width: 480px;}
+	.show-desktop	{display:none;}
+	.hide-desktop	{display:block;}
+	.show-tablet	{display:block;}
+	.hide-tablet	{display:none;}
+	.show-phone		{display:none;}
+	.hide-phone		{display:block;}
+    .padleft {
+        padding-left:0px;
+    }
+    .padright {
+        padding-right:0px;
+    }
+
+}
+
+@media all and (max-width: 480px) {
+    .momente{ position: relative;margin:0px;padding:0px;display:block;border:solid 0px;width:100%}
+    div.col_2:nth-child(7) > a:nth-child(1) > img:nth-child(1) {
+        z-index: 100;
+        text-align: center!important;
+        width: 150px!important;
+    }
+    .grid *[class*="col_"]{
+	float:none;
+	width:auto;
+	clear:both;
+	display:block;
+	}
+	
+	/* columns inside of columns */
+	.grid *[class*="col_"] [class*="col_"]{
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+	}
+
+	.grid{max-width: 100%;/*320*/}
+	.show-desktop	{display:none;}
+	.hide-desktop	{display:block;}
+	.show-tablet	{display:none;}
+	.hide-tablet	{display:block;}
+	.show-phone		{display:block;}
+	.hide-phone		{display:none;}
+    .padleft {
+        padding-left:0px;
+    }
+    .padright {
+        padding-right:0px;
+    }
+}
+@media print {
+
+    .footer, .footer-outer { display: none; }
+    body,p.bodytext, a,a:hover, a:active {
+        text-align:left;
+        background: transparent !important;
+        color: #909192 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        font-family: "DIN Next W02 Medium", arial, verdana, sans-serif;
+    }
+    .momente{ display: none;}
+    div.col_2:nth-child(7) > a:nth-child(1) > img:nth-child(1) {
+        z-index: 100;
+        text-align: center;
+        width: 120px!important;
+    }
+    .grid *[class*="col_"]{
+        float:none;
+        width:auto;
+        clear:both;
+        display:block;
+    }
+
+    /* columns inside of columns */
+    .grid *[class*="col_"] [class*="col_"]{
+        margin-left:0;
+        margin-right:0;
+        width:100%;
+    }
+
+    .grid{max-width: 100%;/*320*/}
+    .show-desktop  {display:block;}
+    .hide-desktop  {display:block;}
+    .show-tablet  {display:none;}
+    .hide-tablet  {display:block;}
+    .show-phone    {display:block;}
+    .hide-phone    {display:none;}
+    #menu    {display:none;}
+    .logo {
+        width: 200px;
+    }
+}

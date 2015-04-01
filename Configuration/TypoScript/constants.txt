@@ -1,0 +1,45 @@
+	# Include constants from other extensions
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:css_styled_content/static/constants.txt">
+
+# Settings
+plugin.tx_ipresentyou_basetheme {
+	# customsubcategory=onepage=LLL:EXT:ipresentyou_basetheme/Resources/Private/Language/locallang.xlf:onepage
+	# cat=plugin.ipresentyou_basetheme/onepage/10; type=string; label= ipresentyou_basetheme BaseURL
+	# http://localhost/
+	absRefPrefix = 
+
+	general {
+		adminPanel = 0
+	}
+
+	assets {
+		# cat=plugin.ipresentyou_basetheme/onepage/20; type=boolean; label= Compress JS & CSS
+		compress = 1
+		# cat=plugin.ipresentyou_basetheme/onepage/30; type=boolean; label= Merge JS & CSS
+		merge = 1
+	}
+
+	extensions {
+		realurl = 1
+		sourceopt = 0
+	}
+
+	settings {
+		# customsubcategory=analytics=LLL:EXT:ipresentyou_basetheme/Resources/Private/Language/locallang.xlf:analytics
+		# cat=plugin.ipresentyou_basetheme/analytics/10; type=boolean; label= Analytics Enable
+		analyticsEnable = 0
+		# cat=plugin.ipresentyou_basetheme/analytics/20; type=string; label= Analytics UA-XXXXXX
+		analyticsUA = UA-XXXXXX
+		# cat=plugin.ipresentyou_basetheme/analytics/30; type=string; label= Analytics Domain
+        analyticsUrl = johannespoll.de
+	}
+}
+
+# Include Filepaths
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ipresentyou_basetheme/Configuration/TypoScript/Constants/Filepaths.ts">
+
+# responive images
+styles.content.imgtext.responsive = 1
+styles.content.imgtext.layoutKey = picturefill
+
+
