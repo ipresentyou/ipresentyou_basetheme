@@ -1,5 +1,6 @@
-TYPO3-IPRESENTYOU Basetheme Template
+TYPO3-IPRESENTYOU base theme Template
 ======================
+Ipresentyou basetheme is a basetheme for the ipresentyou presentation System based on Typo3 
 
 Installation
 ------------
