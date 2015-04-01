@@ -1,4 +1,4 @@
-TYPO3-OnePage-Portfolio Template
+TYPO3-IPRESENTYOU Basetheme Template
 ======================
 
 Installation
